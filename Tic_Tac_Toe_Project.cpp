@@ -4,22 +4,17 @@ using namespace std;
 
 int row, column, diagonal;
 int matrix[3][3]; // create a 3x3 matrix
-
 int emptyrow(int c);
 int emptycol(int r);
-
 void init_matrix(void); // initialize matrix
 void get_player_move(void);
 void get_computer_move(void);
 void display_matrix(void);
 char check(void);
-
 bool vulnerable(int mat[3][3]);
 bool winnable(int mat[3][3]);
 bool finish(int mat[3][3]);
-
 void restart();
-
 
 int main(void)
 {	
